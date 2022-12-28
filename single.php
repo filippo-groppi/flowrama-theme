@@ -12,8 +12,14 @@ get_header();
 
 	<main id="primary" class="site-main">
 
+        <!-- outputs a flags list (without languages names) -->
+        <ul>
+            <?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 1 ) ); ?>
+        </ul>
+
 		<?php
 		while ( have_posts() ) :
+            do_action( 'wpmu_before_content' );
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
