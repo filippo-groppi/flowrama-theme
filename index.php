@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main row bg-danger">
-        <div class="container bg-success">
+	<main id="primary" class="site-main row bg-dark pt-4">
+        <div class="container bg-info pl-3 pr-3 pl-md-3 pr-md-3">
 		<?php
 		if ( have_posts() ) :
 
@@ -31,7 +31,7 @@ get_header();
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-                echo "<div class='bg-info'>";
+                echo "<div class='bg-warning p-3 mb-3'>";
 
 
                 /*

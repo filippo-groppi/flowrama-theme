@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container">
 
         <!-- outputs a flags list (without languages names) -->
         <ul>
